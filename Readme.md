@@ -84,7 +84,9 @@ expense-sharing-app/
 CREATE DATABASE expense_sharing;
 USE expense_sharing;
 ```
+
 -- Run the setup.sql script provided
+```
 SOURCE setup.sql;
 ```
 setup.sql Content;
