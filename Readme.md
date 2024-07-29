@@ -41,7 +41,30 @@ Design and implement a backend for a daily-expenses sharing application. This ap
 
 ## Project Structure
 ```
-expense-sharing-app/ ├── app/ │ ├── init.py │ ├── main.py │ ├── models.py │ ├── schemas.py │ ├── database.py │ ├── crud.py │ ├── utils.py │ ├── routers/ │ │ ├── init.py │ │ ├── users.py │ │ └── expenses.py │ └── tests/ │ ├── init.py │ ├── test_users.py │ └── test_expenses.py ├── alembic ├── .env ├── Readme.md ├── alembic.ini ├── requirements.txt ├── README.md └── setup.sql
+expense-sharing-app/ 
+├── app/ 
+│ ├── init.py 
+│ ├── main.py 
+│ ├── models.py 
+│ ├── schemas.py 
+│ ├── database.py
+│ ├── crud.py │ 
+├── utils.py 
+│ ├── routers/ 
+│ │ ├── init.py 
+│ │ ├── users.py 
+│ │ └── expenses.py 
+│ └── tests/ 
+│ ├── init.py 
+│ ├── test_users.py 
+│ └── test_expenses.py 
+├── alembic 
+├── .env 
+├── Readme.md 
+├── alembic.ini 
+├── requirements.txt 
+├── README.md 
+└── setup.sql
 ```
 
 ## Setup and Installation Instructions
