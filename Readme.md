@@ -177,13 +177,13 @@ To stop the server, press Ctrl+C in the terminal where the server is running.
    ```
 
 ## API Endpoints
-**User Endpoints** 
-- Create User: \`POST /users/`
-- Retrieve User Details: \`GET /users/{user_id}`
-**Expense Endpoints**
-- Add Expense: \`POST /expenses/`
-- Retrieve User Expenses: \`GET /users/{user_id}/expenses/`
-- Retrieve All Expenses:\`GET /expenses/`
+- **User Endpoints** 
+  - Create User: \`POST /users/`
+  - Retrieve User Details: \`GET /users/{user_id}`
+- **Expense Endpoints**
+  - Add Expense: \`POST /expenses/`
+  - Retrieve User Expenses: \`GET /users/{user_id}/expenses/`
+  - Retrieve All Expenses:\`GET /expenses/`
   
 ## Contributing
 
