@@ -89,35 +89,7 @@ USE expense_sharing;
 ```
 SOURCE setup.sql;
 ```
-setup.sql Content;
 
-
-Copy code
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    mobile_number VARCHAR(20) NOT NULL
-);
-
-CREATE TABLE expenses (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    description VARCHAR(255) NOT NULL,
-    amount DECIMAL(10, 2) NOT NULL,
-    payer_id INT NOT NULL,
-    FOREIGN KEY (payer_id) REFERENCES users(id) ON DELETE CASCADE
-);
-
-CREATE TABLE expense_splits (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    expense_id INT NOT NULL,
-    user_id INT NOT NULL,
-    amount DECIMAL(10, 2),
-    percentage DECIMAL(5, 2),
-    split_type ENUM('equal', 'exact', 'percentage') NOT NULL,
-    FOREIGN KEY (expense_id) REFERENCES expenses(id) ON DELETE CASCADE,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
 Installing Dependencies
 Create a virtual environment and install the dependencies:
 
