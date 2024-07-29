@@ -4,6 +4,9 @@
 Design and implement a backend for a daily-expenses sharing application. This application will allow users to add expenses and split them based on three different methods: exact amounts, percentages, and equal splits. The application should manage user details, validate inputs, and generate downloadable balance sheets.
 
 ## Requirements
+Python
+MySQL
+FastAPI
 
 ### User Management
 - Each user should have an email, name, and mobile number.
@@ -89,46 +92,6 @@ USE expense_sharing;
 ```
 SOURCE setup.sql;
 ```
-
-Installing Dependencies
-Create a virtual environment and install the dependencies:
-
-bash
-Always show details
-
-Copy code
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-requirements.txt Content
-Always show details
-
-Copy code
-fastapi
-uvicorn
-sqlalchemy
-alembic
-pydantic
-mysqlclient
-python-dotenv
-Running the Application
-Database Migrations
-Use Alembic for database migrations.
-
-bash
-Always show details
-
-Copy code
-alembic init alembic
-# Configure alembic.ini and env.py to connect to your MySQL database
-alembic revision --autogenerate -m "Initial migration"
-alembic upgrade head
-Start the FastAPI Server:
-bash
-Always show details
-
-Copy code
-uvicorn app.main:app --reload
 Create a Database and User
 Open the MySQL command line client and log in as the root user:
 
@@ -167,7 +130,43 @@ bash
 Always show details
 
 Copy code
-mysql://your_username:your_password@localhost/expense_sharing
+mysql://your_username:your_password@localhost/expense_sharin
+**Installing Dependencies**:
+Create a virtual environment and install the dependencies:
+```
+python -m venv venv
+venv/Scripts/activate
+```
+```
+pip install -r requirements.txt
+```
+**requirements.txt**
+```
+Python
+MySQL
+fastapi
+uvicorn
+sqlalchemy
+alembic
+pydantic
+mysqlclient
+python-dotenv
+```
+
+***Running the Application***
+Database Migrations
+Use Alembic for database migrations.
+```
+alembic init alembic
+# Configure alembic.ini and env.py to connect to your MySQL database
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+ ```
+**Start the FastAPI Server:**
+ ```
+uvicorn app.main:app --reload
+ ```
+g
 Access the Application
 Once the server is running, you can access your FastAPI application by navigating to http://127.0.0.1:8000 in your web browser.
 
