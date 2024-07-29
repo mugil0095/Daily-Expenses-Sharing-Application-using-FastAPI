@@ -175,6 +175,21 @@ To stop the server, press Ctrl+C in the terminal where the server is running.
    ```
    pytest
    ```
+
+## API Endpoints
+User Endpoints
+Create User: 
+- \`POST /users/`
+Retrieve User Details:
+- \`GET /users/{user_id}`
+Expense Endpoints
+Add Expense:
+- \`POST /expenses/`
+Retrieve User Expenses:
+- \`GET /users/{user_id}/expenses/`
+Retrieve All Expenses:
+- \`GET /expenses/`
+  
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an Issue for any bugs or feature requests.
