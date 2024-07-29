@@ -1,6 +1,3 @@
-# Let's create the README.md file with the provided content.
-
-readme_content = """
 # Daily Expenses Sharing Application
 
 ## Objective
@@ -26,16 +23,6 @@ Design and implement a backend for a daily-expenses sharing application. This ap
 3. **Percentage**:
     - Scenario: You go to a party with 2 friends and one of your cousins. You owe 50%, Friend 1 owes 25%, and Friend 2 owes 25%.
 
-### Balance Sheet
-- Show individual expenses.
-- Show overall expenses for all users.
-- Provide a feature to download the balance sheet.
-
-## Deliverables
-
-### Backend Service
-Design the backend service to handle user and expense management.
-
 ### API Endpoints
 
 #### User Endpoints
@@ -52,33 +39,10 @@ Design the backend service to handle user and expense management.
 - Validate user inputs.
 - Ensure percentages in the percentage split method add up to 100%.
 
-### Documentation
-- Include setup and installation instructions.
-- Write clear and concise code comments.
-
-## Evaluation Criteria
-1. Correctness: Functionality meets the requirements.
-2. Code Quality: Code is clean, readable, and maintainable.
-3. Documentation: Clear and comprehensive documentation.
-4. Innovation: Creative and efficient solutions.
-
-## Bonus Points
-- Implement user authentication and authorization.
-- Include error handling and input validation.
-- Optimize performance for large datasets.
-- Add unit and integration tests.
-
-## Submission
-Submit your project as a GitHub repository link. Include a README file with instructions on how to set up and run the project.
-
 ## Project Structure
-
+```
 expense-sharing-app/ ├── app/ │ ├── init.py │ ├── main.py │ ├── models.py │ ├── schemas.py │ ├── database.py │ ├── crud.py │ ├── utils.py │ ├── routers/ │ │ ├── init.py │ │ ├── users.py │ │ └── expenses.py │ └── tests/ │ ├── init.py │ ├── test_users.py │ └── test_expenses.py ├── alembic ├── .env ├── Readme.md ├── alembic.ini ├── requirements.txt ├── README.md └── setup.sql
-
-markdown
-Always show details
-
-Copy code
+```
 
 ## Setup and Installation Instructions
 
