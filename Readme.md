@@ -4,9 +4,9 @@
 Design and implement a backend for a daily-expenses sharing application. This application will allow users to add expenses and split them based on three different methods: exact amounts, percentages, and equal splits. The application should manage user details, validate inputs, and generate downloadable balance sheets.
 
 ## Requirements
-Python
-MySQL
-FastAPI
+- Python
+- MySQL
+- FastAPI
 
 ### User Management
 - Each user should have an email, name, and mobile number.
