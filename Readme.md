@@ -88,7 +88,7 @@ CREATE DATABASE expense_sharing;
 USE expense_sharing;
 ```
 
--- Run the setup.sql script provided
+Run the setup.sql script provided
 ```
 SOURCE setup.sql;
 ```
@@ -111,11 +111,11 @@ FLUSH PRIVILEGES;
 Construct the DATABASE_URL
 The DATABASE_URL is a connection string that specifies how to connect to your database. For MySQL, the format is:
 ```
-mysql://<username>:<password>@<host>/<database_name>
+DATABASE_URL=mysql+pymysql://<username>:<password>@<host>/<database_name>
 ```
 Given the username, password, and database name from the previous steps, the DATABASE_URL might look like this:
 ```
-mysql://your_username:your_password@localhost/expense_sharing
+DATABASE_URL=mysql+pymsql://your_username:your_password@localhost/expense_sharing
 ```
 **Installing Dependencies**:
 Create a virtual environment and install the dependencies:
