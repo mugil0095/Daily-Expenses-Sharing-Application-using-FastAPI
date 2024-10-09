@@ -83,7 +83,7 @@ expense-sharing-app/
 1. Install MySQL: Ensure MySQL is installed and running on your machine.
 2. Create Database: Execute the following commands in your MySQL shell to create the database:
 
-```
+```bash
 CREATE DATABASE expense_sharing;
 USE expense_sharing;
 ```
